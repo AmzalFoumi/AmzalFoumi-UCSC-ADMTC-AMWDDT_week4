@@ -1,0 +1,234 @@
+/*Font settings*/
+
+body{
+    font-family: "Roboto", sans-serif;;
+}
+
+/*Start of styling for Top section*/
+
+#top{
+    background-color: #023E8A;
+    position: fixed;
+    width: 99%;
+    height: 20vh;
+ 
+    margin-top: 0;
+    top: 0;
+}
+
+#top #header{
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+
+}
+
+#header a{
+    text-decoration: none;
+    color: white;
+}
+
+#header a:hover{
+    color:#006eff;
+    
+}
+
+#header a div{
+    display: none;
+    z-index: 1;
+    position: absolute;
+
+    text-align: center;
+    font-size: 0.5rem;
+    color: white;
+
+    border-radius: 50px;
+    padding: 0.5rem;
+
+    background-color: #03045E;
+}
+
+#header a:hover div{
+    display: block;
+}
+
+#top #nav{
+    background-color: #023E8A;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.dropbtn{
+    display: inline-block;
+    position: relative;
+
+    max-width: 150px;
+    min-height: 2.5rem;
+    flex: 1;
+    flex-basis: 100px;
+    text-align: center;
+    background-color: #0077B6;
+
+    border-left: solid 1px white;
+}
+
+.dropbtn a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding-top: 0.6rem;
+    color: white;
+
+
+    height: 100%;
+    width: 100%;
+    
+}
+
+.drop{
+    display: none;
+    position: absolute;
+    top:2.5rem;
+    
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    background-color: white;
+    box-shadow: 1px 1px 0 0 black;
+    
+
+    z-index: 1;
+}
+
+.drop-content{
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    color: black;
+
+
+    justify-content: center;
+
+    border-bottom: solid 1px #03045E;
+}
+
+.drop-content a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 0;
+    color: black;
+
+    height: 100%;
+    width: 100%;
+    
+}
+
+.dropbtn:hover .drop{
+    display: block;
+    max-width: 150px;
+
+}
+
+.dropbtn:hover{
+    border: solid 1px white;
+    border-right: none;
+    background-color: #00B4D8;
+    
+}
+
+.drop-content:hover{
+    background-color: #00B4D8;
+}
+
+/*Special styling for home and right-most buttons*/
+#homebtn{
+    background-color: #03045E;
+    border-radius:  50px 0 0 50px ;
+    border-left: none;
+}
+
+#homebtn:hover{
+    border: solid 1px white;
+    border-right: none;
+    background-color: #00B4D8;
+}
+
+#rightbtn{
+    border-radius: 0 50px 50px 0;
+}
+
+#rightbtn:hover{
+    border-right: solid 1px white;
+}
+/*End of special styling for home and right-most buttons*/
+
+/*End of styling for Top section*/
+
+/*Start of main container styling*/
+#main-grid-container{
+    position: absolute;
+    top: 21vh;
+    min-height: fit-content;
+    background-color: white;
+    z-index: -1;
+    width: 99%;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /*simple 12 column division without having to use bootstrap*/
+    grid-template-rows: 60px repeat(5, 1fr);
+    gap: 10px;   
+}
+
+.content{
+    background-color: aliceblue;
+    grid-column: span 6;
+    grid-row: span 2;
+
+    border-radius: 1rem;
+
+}
+
+.page-description{
+    grid-column: span 12;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+    color: #023E8A;
+    font-weight: 300;
+}
+
+
+
+
+#foot{
+    position: relative;
+    bottom: 0;
+    background-color: #023E8A;
+
+
+    height: 10vh;
+    width: 100%;
+
+    grid-column: span 12;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Skills Day 4</title>
+
+        <!--Getting the Roboto font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!--External Stylesheet applied-->
+        <link rel="stylesheet" href="./styles.css">
+
+        <!--Internal styling specific for this page-->
+        <style>
+            .content{
+                padding: 15px;
+
+            }
+
+            .left-content{
+                grid-column: span 10;
+                
+            }
+
+
+            .content h1{
+                text-align: center;
+                color: #023E8A;
+            }
+
+            .content h2 {
+                text-align: center;
+                color: #023E8A;
+                font-weight: 300;
+            }
+
+            .content dd,p{
+                color: #023E8A;
+                font-weight: 400;
+            }
+
+            dt,dl,dd{
+                margin: 0;
+                padding: 0;
+            }
+
+            mark{
+                background-color: rgb(180, 205, 227);
+            }
+
+            .content a[href]{
+                text-decoration: none;
+                font-style:italic;
+                color: #023E8A;
+                font-weight: 300; 
+            }
+
+            .content a[href]:hover{
+                color: black;
+            }
+
+
+            
+            .right-content{
+                grid-column: span 2;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                color: #023E8A;
+            }
+
+            .right-content li{
+                padding-top: 2rem;
+                margin: 0;
+                margin-left: 2rem;
+            }
+
+            .right-content ul{
+                padding: 0;
+                margin: 0;
+            }
+
+        </style>
+	</head>
+	<body>
+
+        <!--Start of top bar code-->
+        <div id="top">
+            <div id="header">
+                <h1>
+                    <a href="https://amzalfoumi.github.io/UCSC-ADMTC-AMWDDT_week2/">
+                        Amzal Foumi
+                        <div id="detour-drop">
+                            <p>A little detour to the old site I made with just HTML</p>
+                        </div>
+                    </a>
+                </h1>            
+            </div>           
+            <!--Nav Bar code, including dropdowns-->
+            <div id="nav">
+                <div class="dropbtn" id="homebtn">
+                    <a href="./index.html">Home</a>
+                </div>
+                <div class="dropbtn">
+                    <a href="">About</a>
+                    <ul class="drop">
+                        <li class="drop-content"><a href="./personal-info.html">Personal Info</a></li>
+                        <li class="drop-content"><a href="./skills.html">Qualifications and Skiils</a></li>
+                    </ul>
+                </div>
+                <div class="dropbtn" id="rightbtn">
+                    <a href="">Contact</a>
+                    <ul class="drop">
+                        <li class="drop-content"><a href="./contact-form.html">Contact Form</a></li>
+                        <li class="drop-content"><a href="./calc.html">Fee-Calculator</a></li>
+                    </ul>
+                </div>    
+            </div>
+            <!--End of navbar code-->
+        </div>
+        <!--End of top bar code-->
+        
+        <!--Start of main area code-->
+        <div id="main-grid-container">
+            <div class="content page-description">Qualifications and Skills</div>
+            <div class="content left-content">
+                <h1>Education</h1>
+                <dl>
+                    <dt><a name="school"><h2>School</h2></a></dt>
+                    <dd id="school">
+                        <!--Start of school crest in edu section
+                        <div id="crest">   
+                            <center><img src="./Images/Education_page/School_Crest.png" usemap="#crest" /></center>
+                        </div>
+                        <map name="crest">
+                            <area shape="poly" href="https://www.royalcollege.lk" coords="131,363,161,328,154,288,114,288,107,328" alt="RC in crest" />
+                            <area shape="circle" href="https://royalcollege.lk/life-at-reid-avenue/identity-of-a-royalist/coat-of-arms-2/" coords="132,213,50" alt="Center of crest" />
+                            <area shape="rect" href="https://x.com/_floreat_" coords="69,60,192,98" alt="Floreat in crest" />
+                        </map>
+                        End of school crest in edu section-->
+
+                        <p>
+                            I am a past pupil of Royal College Colombo, where I have been studying for 13 years.
+                            The School's moto, <q cite="https://en.wikipedia.org/wiki/Disce_aut_discede"><mark>Disce Aut Discede </mark></q> which means Learn or Depart,
+                            has been my motivation factor.
+                        </p>
+                        
+                        <p>
+                            I completed my GCE Advanced level examination here, Specializing in teh physical sciences team. I gave a special focus towards Mathematics during this period
+                        </p>
+                    </dd>
+                    <dt><a name="university"><h2>University</h2></a></dt>
+                    <dd>
+                        <p>
+                            I am currently an undergraduate at <abbr title="Sri Lanka Institute of Information Technology">SLIIT</abbr> Faculty of Computing. 
+                            I started in November of 2023 and Iam expected to graduate in 2027.
+                        </p>
+                        <p>
+                            I am following a degree program in 
+                            <a href="https://www.sliit.lk/computing/programmes/information-systems-engineering-degree/" target="_blank">
+                                IT specializing in Information Systems Engineering
+                            </a>
+                            This degree path is expected to provide me the necassaery knowledge and skiils
+                            to apply technology in a business context. This is by providing a deep knowledge in data analysis,
+                            software engineering, computer systems and information systems fields.
+                        </p>
+                        <p>
+                            I have also been able to participate in activities of various communities including
+                            the Roteract Club of SLIIT and the IEEE student branch of SLIIT.
+                        </p>
+                    </dd>
+                    <dt><a name="other"><h2>Other</h2></a></dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <b>CIMA</b>
+                            </dt>
+                            <dd>
+                                <p>
+                                    Obtained a Diploma in Management accounting from CIMA by 
+                                    completing upto the operational case study level. Currently reading
+                                    for management level with the expectation of obtaining
+                                    the Advanced Diploma in Management accounting.
+                                </p>
+                                <p>
+                                    The overall expectation is to complete the CIMA education and go 
+                                    onto become a full member. It should be noted that a full CIMA
+                                    qualification is supposedly equivalent to a Masters degree in Management
+                                    accounting.
+                                </p>
+                                <p>
+                                    CIMA and its affiliated programs have provided me skills in Management Accounting, 
+                                    Financial Analysis and Effective Financial management while also providing me a 
+                                    hollistic knowledge on current business environment and trends.
+                                </p>
+                            </dd>
+                            <dt>
+                                <b>
+                                    Certificate Courses with <abbr title="University of Colombo, School of Computing">UCSC</abbr>
+                                </b>
+                            </dt>
+                            <dd>
+                                <p>
+                                    As of now, I have completed the 
+                                    <a href="https://ucsc.cmb.ac.lk/training-course-on-python-fundamentals/" target="_blank">
+                                        Certificate Course in Python Fundamentals
+                                    </a>
+                                    with the Computing Services Center in UCSC.
+                                    I am currently following the  
+                                    <a href="https://ucsc.cmb.ac.lk/advanced-multimedia-web-design-development-techniques/" target="_blank">
+                                        Advanced Multimedia Web Design and Development Techniques
+                                    </a>
+                                    course provided by the ADMTC of UCSC.  After succesfull completion, the plan is to move
+                                    on to the certificate course on 
+                                    <a href="https://ucsc.cmb.ac.lk/training-course-on-mern-stack/" target="_blank">
+                                        Mern Stack Fundamentals
+                                    </a> 
+                                    and the course on 
+                                    <a href="https://ucsc.cmb.ac.lk/training-course-on-data-science-with-python/" target="_blank">
+                                        Data Science with Python
+                                    </a>. 
+                                    Please expect me to see my face around campus for much longer if my plans don't change :)
+                                </p>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+                <br><br><br>
+            </div>
+            <div class="content right-content">
+                
+                <ul>
+                    <h1>Skills</h1>
+                    <li>Business Administration</li>
+                    <li>Accounting</li>
+                    <li>Financial Analysis</li>
+                    <li>Web development</li>
+                    <li>Web design</li>
+                    <li>UI/UX design</li>
+                    <li>Python and C programming languages</li>
+                    <li>Pure Mathematics</li>
+                    <li>Trilingual (English, Tamil and Sinhala)</li>
+                </ul>
+            </div>
+
+            <div id="foot">
+                Copyright 2024 Amzal Foumi
+            </div>
+        </div>
+        <!--End of main area code-->
+
+	</body>
+</html>

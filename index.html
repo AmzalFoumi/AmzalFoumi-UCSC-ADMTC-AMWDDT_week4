@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Home Day 4</title>
+
+        <!--Getting the Roboto font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!--External Stylesheet applied-->
+        <link rel="stylesheet" href="./styles.css">
+
+        <!--Internal styling specific for this page-->
+        <style>
+            .content{
+                grid-column: span 12;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                text-align: center;
+
+                font-size: 2rem;
+                color: #023E8A;
+                font-weight: 300;
+                padding: 2rem;
+            }
+
+            
+        </style>
+
+	</head>
+	<body>
+
+        <!--Start of top bar code-->
+        <div id="top">
+            <div id="header">
+                <h1>
+                    <a href="https://amzalfoumi.github.io/UCSC-ADMTC-AMWDDT_week2/">
+                        Amzal Foumi
+                        <div id="detour-drop">
+                            <p>A little detour to the old site I made with just HTML</p>
+                        </div>
+                    </a>
+                </h1>
+            </div>           
+            <!--Nav Bar code, including dropdowns-->
+            <div id="nav">
+                <div class="dropbtn" id="homebtn">
+                    <a href="./index.html">Home</a>
+                </div>
+                <div class="dropbtn">
+                    <a href="">About</a>
+                    <ul class="drop">
+                        <li class="drop-content"><a href="./personal-info.html">Personal Info</a></li>
+                        <li class="drop-content"><a href="./skills.html">Qualifications and Skiils</a></li>
+                    </ul>
+                </div>
+                <div class="dropbtn" id="rightbtn">
+                    <a href="">Contact</a>
+                    <ul class="drop">
+                        <li class="drop-content"><a href="./contact-form.html">Contact Form</a></li>
+                        <li class="drop-content"><a href="./calc.html">Fee-Calculator</a></li>
+                    </ul>
+                </div>    
+            </div>
+            <!--End of navbar code-->
+        </div>
+        <!--End of top bar code-->
+        
+        <!--Start of main area code-->
+        <div id="main-grid-container">
+            
+            <div class="content intro">
+                Welcome to my personal corner of the web! I’m Amzal, a passionate IT student, 
+                currently dedicated to Web Design and Development.
+                Here, you'll find insights into my skills, background and a glimpse into what drives my creativity and curiosity. 
+                <br><br>Explore, connect, and join me on this journey of discovery and innovation.
+            </div>
+            <div id="foot">
+                Copyright 2024 Amzal Foumi
+            </div>
+        </div>
+        <!--End of main area code-->
+
+	</body>
+</html>
